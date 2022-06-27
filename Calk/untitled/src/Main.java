@@ -48,7 +48,7 @@ public class Main {
         String operator = expressionTokens[1];
 
         // Разрешаем только числа от 0 до 10
-        if (((operandA < 0) || (operandB < 0)) || ((operandA > 10) || (operandB > 10))) {
+        if (((operandA < 1) || (operandB < 1)) || ((operandA > 10) || (operandB > 10))) {
             throw new Exception("Неверный формат ввода");
         }
         
